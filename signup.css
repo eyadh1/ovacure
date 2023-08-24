@@ -18,7 +18,11 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-
+/* Style for the signup link */
+.signup-container a {
+    text-decoration: none ;
+    color: #dacccc;
+}
 /* Styling for the heading within the container */
 .signup-container h1 {
     margin-bottom: 20px;

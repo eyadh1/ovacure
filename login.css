@@ -11,7 +11,10 @@ body {
     align-items: center; /* Vertically center content */
     height: 100vh; /* Set height to 100% of viewport height */
 }
-
+.login-container a {
+    text-decoration: none  ;
+    color: azure;
+}
 /* Style for the login container */
 .login-container {
     background-color: #b1666a; /* Set background color */
