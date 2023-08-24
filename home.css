@@ -36,6 +36,21 @@ h4 {
     padding: 0px 0%;
   
 }
+.logo {
+    display: flex;
+    align-items: start;
+    margin: left 10px;
+    flex-wrap: nowrap ;
+}
+
+.logo-img{
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 100px;
+    margin: 20px 0;
+}
+
 /* Banner section styles */
 #banner {
     background-color: #ce979a;
@@ -146,19 +161,7 @@ h4 {
       padding: 0 40px;
     }
   }
-/* Logo container styles */
-.logo {
-    display: flex;
-    align-items: center;
-   
-}
-/* Logo image styles */
-.logo-img {
-    height: auto;
-    width: 100%;
-    max-height: 70px;
-    margin: 10px 0;
-}
+
 /* header start */ 
 #header {
     display: flex;
