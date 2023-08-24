@@ -30,25 +30,24 @@ h4 {
 .header-container {
     display: flex;
     justify-content: baseline;
-    align-items: center;
-    max-width: 1200px;
+    align-items:center;
     margin: 0 auto;
     padding: 0px 0%;
-  
+    max-height: 100px;
 }
 .logo {
     display: flex;
     align-items: start;
     margin: left 10px;
-    flex-wrap: nowrap ;
 }
 
 .logo-img{
-    height: auto;
-    width: auto;
-    max-height: 200px;
-    max-width: 100px;
+    display: flex;
+    height: 300px;
+    width: 300px;
     margin: 20px 0;
+    margin-top: 12%;
+    background-size: 10px; 
 }
 
 /* Banner section styles */
@@ -238,6 +237,7 @@ h4 {
     color: #a35057;
     font-size: 30px;
     font-weight: lighter;
+    text-align: center;
 }
 /* Footer styles */
 footer {
