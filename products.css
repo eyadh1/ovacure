@@ -1,0 +1,194 @@
+@import url(https://fonts.google.com/specimen/Abril+Fatface?query=abril);
+@import url(https://fonts.google.com/specimen/Anonymous+Pro?query=anony);
+*{
+    margin: 0;
+    padding: 0px ; 
+    font-family:'Abril Fatface', cursive, sans-serif ;
+    box-sizing : border-box;
+    }
+
+
+/* Body styles */
+body{
+    background-color: #b1666a;
+    font-family: system-ui;
+  }
+  
+  /* Main container styles */
+  .container{
+    width: 1000px;
+    margin: auto;
+    transition: 0.5s;
+  }
+ h1 {
+   color: azure;
+   text-align: center;
+   font-family: 'Abril Fatface',cursive,sans-serif;
+   font-size: 100px;
+  }
+  /* Header styles */
+  header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+  }
+  
+  /* Shopping cart styles */
+  header .shopping{
+    position: relative;
+    text-align: right;
+  }
+  
+  /* Shopping cart icon styles */
+  header .shopping img{
+    width: 40px;
+  }
+
+  
+  /* Shopping cart quantity badge styles */
+  header .shopping span{
+    background: rgb(240, 237, 237);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cea9a9;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+  }
+  
+  /* Item list styles */
+  .list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+  }
+  
+  /* Individual item styles */
+  .list .item{
+    text-align: center;
+    background-color: #ce979a;
+    padding: 20px;
+    box-shadow: 0 50px 50px #ce979a;
+    letter-spacing: 1px;
+  }
+  
+  /* Item image styles */
+  .list .item img{
+    width: 90%;
+    height: 430px;
+    object-fit: cover;
+  }
+  
+  /* Item title styles */
+  .list .item .title{
+    font-weight: 600;
+  }
+  
+  /* Item price styles */
+  .list .item .price{
+    margin: 10px;
+  }
+  
+  /* Button styles within items */
+  .list .item button{
+    background-color: #ece6eb;
+    color: #a76161;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  /* Card styles */
+  .card{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    background-color: #dbcac38a;
+    height: 100vh;
+    transition: 0.5s;
+  }
+  
+  /* Active card styles */
+  .active .card{
+    left: calc(100% - 500px);
+  }
+  
+  /* Active container styles */
+  .active .container{
+   transform: translateX(-200px);
+  }
+  
+  /* Card title styles */
+  .card h1{
+    color: #a76161;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Checkout section styles */
+  .card .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Checkout button styles */
+  .card .checkOut div{
+    background-color: #8d4848;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Second checkout button styles */
+  .card .checkOut div:nth-child(2){
+    background-color: #fae8f5;
+    color:#a76161;
+  }
+  
+  /* Card item list styles */
+  .listCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+  }
+  
+  /* Card item container styles */
+  .listCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Card item image styles */
+  .listCard li img{
+    width: 90%;
+  }
+  
+  /* Card item button styles */
+  .listCard li button{
+    background-color: #fff5;
+    border: none;
+  }
+  
+  /* Card item count styles */
+  .listCard .count{
+    margin: 0 10px;
+  }
+  

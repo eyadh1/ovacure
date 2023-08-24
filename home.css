@@ -1,0 +1,372 @@
+/* Import fonts from Google Fonts */
+@import url(https://fonts.google.com/specimen/Abril+Fatface?query=abril);
+@import url(https://fonts.google.com/specimen/Anonymous+Pro?query=anony);
+/* Apply a reset to default margin and padding, set font, and box-sizing */
+*{
+    margin: 0;
+    padding: 0px ; 
+    font-family:'Abril Fatface', cursive, sans-serif ;
+    box-sizing : border-box;
+    }
+/* Set basic styling for the body */
+body{
+    background-color: #ce979a; 
+    width: 100%;
+}
+/* Styling for main heading */
+h1 {
+    font-family:'Abril Fatface', cursive, sans serif ;
+   color: #b1666a;
+   line-height: 54px;
+}
+/* Styling for subheadings */
+h4 {
+    color: azure;
+    font-family:'Anonymus Pro',sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+}
+/*  styles for the header container */
+.header-container {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 0%;
+  
+}
+/* Banner section styles */
+#banner {
+    background-color: #ce979a;
+    height : 90vh;
+    width: 100%;
+    background-position: top 72% right 0 left 0;
+    background-size: cover;
+    padding: 0 20px;
+    max: width 400px;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+}
+/* Styling for banner subheading */
+#banner h4 {
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 80px;
+    color: rgb(245, 245, 245); 
+    font-weight: 700;
+    text-decoration:underline;
+
+}
+/* Styling for banner main heading */
+#banner h1 {
+    color: rgb(35, 155, 145);
+    font-size: 200px;
+    margin-bottom: 100px;
+}
+/* Styling for banner button */
+#banner button {
+ color:rgb(35, 155, 145); 
+ font-weight: 700;
+ cursor: pointer;
+ font-size: 20px;
+ }
+ /* Styling for banner tagline */
+ #banner h5 {
+    padding-bottom: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-bottom: 80px;
+    color: rgb(245, 245, 245); 
+    font-size: 70px;
+ }
+ /* Custom button styles */
+.button-56 {
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  /* Pseudo-element styles for custom button */
+  .button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  /* Hover effect for custom button */
+  .button-56:hover:after {
+    transform: translate(0, 0);
+  }
+  /* Active state styles for custom button */
+  .button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+  /* Hover styles for custom button */
+  .button-56:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-56 {
+      padding: 0 40px;
+    }
+  }
+/* Logo container styles */
+.logo {
+    display: flex;
+    align-items: center;
+   
+}
+/* Logo image styles */
+.logo-img {
+    height: auto;
+    width: 100%;
+    max-height: 70px;
+    margin: 10px 0;
+}
+/* header start */ 
+#header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 60px ;
+    background-color: #dfd0d1;
+    box-shadow: 0 5px 15px ;
+    z-index:  999;
+    position: sticky;
+    top:0%;
+    left: 0%;
+
+}
+/* Navbar styles */
+#navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-right: -20px; 
+
+}
+/* Navbar item styles */
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+ 
+}
+/* Navbar link styles */
+#navbar li a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 600;
+    color : #b1666a;
+    transition: 0.3s ease;
+    position: relative;
+}
+#navbar li a:hover {
+    color: azure;
+    
+}
+/* Active navbar link styles */
+#navbar li a.active {
+    color: azure;
+}
+#navbar li a.active::after,
+#navbar li a.active::after {
+    content:"";
+    width: 30%;
+    height: 2px;
+    background-color: azure;
+    position: absolute;
+    bottom: -8px;
+    left: 20px;
+}
+/* Navbar icon hover styles */
+#navbar li a svg {
+    fill: #b1666a;}
+#navbar li a svg:hover {
+    fill:azure;
+}
+/* About us section styles */
+#about-us {
+    background-color: #dfd0d1;
+}
+/* About us main heading styles */
+#about-us h1 {
+    color: rgb(35, 155, 145);
+    font-size: 40px;
+    text-align: center;
+}
+/* About us content styles */
+#about-us p {
+    color: #a35057;
+    font-size: 30px;
+    font-weight: lighter;
+}
+/* Footer styles */
+footer {
+    background-color: #e4cbcc;
+    text-align: center;
+    color: azure;
+}
+/* Product section styles */
+#product1 {
+    text-align: center ;
+    font-size: 200%;
+    color: azure;
+    background-color: #864448;
+}
+/* Product item styles */
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    cursor: pointer;
+    border-radius: 25px;
+   transition: 0.2s ease;
+    margin: 15px 0;
+
+}
+/* Hover effect for product items */
+#product1 .pro:hover {
+    box-shadow: 10px 10px 15px;
+}
+/* Product image styles */
+#product1 .pro img{
+    width: 100%;
+    height:auto; 
+    max-width: 100%; 
+    border-radius: 25px;
+}
+/* Product description styles */
+#product1 .pro .des{
+    text-align: center;
+    padding:10px 0 ;
+    color: azure;
+}
+
+/* Style for the icon */
+#product1 .pro .des  .icon {
+    /* Add your styles here */
+     display: flex;
+     position: relative;
+    font-size: 24px; /* Adjust the size */
+    color: #f0e5e5; /* Adjust the color */
+    margin-right: 10px; /* Add spacing to the right */
+ 
+}
+/* Product container styles */
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro .des .icon {
+    display: flex;
+    position: relative;
+    font-size: 24px;
+    color: #ce979a; /* Set the initial color */
+    margin-right: 10px;
+    transition: color 0.2s ease; /* Add transition effect for smooth color change */
+}
+/* Icon styles within product description on hover */
+#product1 .pro:hover .des .icon {
+    color: white; /* Change the color when the product is hovered */
+}
+/* Style for the contact form section */
+.contact {
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    text-align: center;
+}
+
+/* Style for the newsletter container */
+.newsletter {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the newsletter heading */
+.newsletter h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #aa5f5f;
+}
+
+/* Style for the newsletter subheading */
+.newsletter h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #e07272;
+}
+
+/* Style for form labels */
+.newsletter label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color:rgb(35, 155, 145);
+}
+
+/* Style for form inputs */
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style for form submit button */
+.newsletter button[type="submit"] {
+    background-color: rgb(35, 155, 145);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+/* Hover effect for form submit button */
+.newsletter button[type="submit"]:hover {
+    background-color: #a874af;
+}

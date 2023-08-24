@@ -1,0 +1,67 @@
+/* Basic styling for the login page */
+
+/* Apply default font and remove margin and padding from the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ce979a; /* Set background color */
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    height: 100vh; /* Set height to 100% of viewport height */
+}
+
+/* Style for the login container */
+.login-container {
+    background-color: #b1666a; /* Set background color */
+    padding: 20px; /* Add padding around the container */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(185, 179, 179, 0.1); /* Add shadow */
+    text-align: center; /* Center align text */
+}
+
+/* Styling for the heading within the container */
+.login-container h1 {
+    margin-bottom: 20px; /* Add space below the heading */
+    color: #ebe3e3; /* Set text color */
+}
+
+/* Styling for the form within the container */
+.login-container form {
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center; /* Center align form elements horizontally */
+}
+
+/* Styling for labels */
+.login-container label {
+    font-weight: bold; /* Set font weight to bold */
+    margin-bottom: 6px; /* Add space below labels */
+    color: #dacccc; /* Set text color */
+}
+
+/* Styling for input fields */
+.login-container input {
+    width: 100%; /* Take up full width of the container */
+    padding: 10px; /* Add padding inside input fields */
+    margin-bottom: 10px; /* Add space below input fields */
+    border: 1px solid #dacccc; /* Add border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Styling for the login button */
+.login-container button {
+    background-color: rgb(35, 155, 145); /* Set background color */
+    color: white; /* Set text color */
+    padding: 10px 20px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 16px; /* Set font size */
+}
+
+/* Styling for the login button on hover */
+.login-container button:hover {
+    background-color: #af747e; /* Change background color on hover */
+}
