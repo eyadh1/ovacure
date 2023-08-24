@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="signup.css">
-<title>Sign Up</title>
+    <!-- Set the character encoding for the document -->
+    <meta charset="UTF-8">
+    
+    <!-- Define the viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link the external stylesheet -->
+    <link rel="stylesheet" href="signup.css">
+    
+    <!-- Set the title of the web page -->
+    <title>Sign Up</title>
 </head>
 <body>
    
- <section id="logo">
-  <img src="assests/ovacure-logos_white.png"/>  
-</section><br/>
-<div class="signup-container">
-  <h1>Sign Up</h1>
-  <form>
-    <label for="first-name">First Name</label>
-    <input type="text" id="first-name" name="first-name" required>
+    <!-- Logo section -->
+    <section id="logo">
+        <!-- Display the logo image -->
+        <img src="assests/ovacure-logos_white.png"/>
+    </section>
+    <br/>
     
-    <label for="last-name">Last Name</label>
-    <input type="text" id="last-name" name="last-name" required>
-    
-    <label for="birthday">Birthday</label>
-    <input type="date" id="birthday" name="birthday" required>
-    
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" required>
-    
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" required>
-    
-    <button type="submit"><a href="home.html">Sign Up</a></button>
-  </form>
-</div>
+    <!-- Sign Up form container -->
+    <div class="signup-container">
+        <!-- Heading for the Sign Up section -->
+        <h1>Sign Up</h1>
+        
+        <!-- Form for user registration -->
+        <form>
+            <!-- Label and input field for First Name -->
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <!-- Label and input field for Last Name -->
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+            
+            <!-- Label and input field for Birthday -->
+            <label for="birthday">Birthday</label>
+            <input type="date" id="birthday" name="birthday" required>
+            
+            <!-- Label and input field for Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <!-- Label and input field for Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <!-- Button to submit the form with a link to "home.html" -->
+            <button type="submit"><a href="home.html">Sign Up</a></button>
+        </form>
+    </div>
 </body>
 </html>
